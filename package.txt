@@ -8,6 +8,8 @@ Flask-WTF         1.1.1
 PyMySQL           1.1.0
 SQLAlchemy        2.0.19
 
+
+
 × pip subprocess to install build dependencies did not run successfully.
 │ exit code: 2
 ╰─> 
