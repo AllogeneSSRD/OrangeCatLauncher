@@ -1,0 +1,81 @@
+.btn-outline-success {
+    position: relative;
+    display: inline-block;
+    padding: .375rem .75rem;/*6px 12px;填充*/
+    /*margin: 0.667px 0.667px;外边距*/
+    color: #225599;
+    text-align: center;
+    text-decoration: none;/*下划线*/
+    text-transform: uppercase;/*首字母大写*/
+    font-size: 1rem;/*字号*/
+    letter-spacing: .1rem;/*字间距*/
+    border-width: 1px;
+    border-radius: .25rem;/*圆角半径*/
+    overflow: hidden;
+    cursor: pointer;/*光标变手*/
+    /*background-image: linear-gradient(45deg,#0162c8,#55e7fc);*/
+    background-color: #fff;
+    border-color: #ced4da;
+    transition: color .15s ease-in-out,
+        background-image .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-image: linear-gradient(45deg,#0162c8,#55e7fc);
+    /*background-image: linear-gradient(45deg,#755bea,#ff72c0);*/
+    background-color: #8cf0ff;
+    border-color: #fff;
+}
+
+.btn-outline-success.focus,.btn-outline-success:focus {
+    box-shadow: 0 0 0 .2rem rgba(1, 98, 200, 0.25);
+}
+
+.btn-outline-success.disabled,.btn-outline-success:disabled {
+    color: #000;
+    background-color: transparent
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active,.btn-outline-success:not(:disabled):not(.disabled):active,.show>.btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #000;
+    border-color: #fff
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active:focus,.btn-outline-success:not(:disabled):not(.disabled):active:focus,.show>.btn-outline-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(200, 0, 255, 0.25);
+    box-shadow: 0 0 0 .2rem rgba(1, 98, 200, 0.25);
+}
+
+
+
+
+.btn btn-outline-success my-2 my-sm-0:nth-child(2) {
+    background: linear-gradient(45deg,#755bea,#ff72c0);
+}
+
+wave {
+    position: absolute;/**/
+    background-color: lightcyan;
+    transform: translate(-50%, -50%);/*中心偏移*/
+    pointer-events: none;
+    border-radius: 50%;
+    animation: diffusionanimate 800ms linear infinite;
+}
+
+@keyframes diffusionanimate {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+
+    100% {
+        width: 400px;
+        height: 400px;
+        opacity: 0;
+    }
+}
