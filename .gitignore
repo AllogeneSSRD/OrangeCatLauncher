@@ -2,3 +2,5 @@
 /config.py
 /templates/index001.html
 /migrations
+/__pycache__
+/blueprints/
